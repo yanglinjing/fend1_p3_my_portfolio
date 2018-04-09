@@ -1,0 +1,151 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #666;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+/* 作品卡、Modal标题 */
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* 给logo上端加留白 */
+.title-logo {
+  margin-top: 2rem;
+  min-width: 48px;
+}
+
+/* 网站标题放大 */
+h1 {
+  font-size: 5rem;
+}
+
+/* 线 */
+.line {
+  color: black;
+}
+
+
+/* 超级大图 - 不随着窗口缩小*/
+.big_pic_div {
+  border-radius:16px;
+  background-image: url("../images/big_pic.jpg");  /* 设置 div 背景图片 */
+  height: 550px;  /* 设置 div 高度为固定值 */
+  background-position: center;  /* 让图片的中心区域始终保持在 div 内，也即是为了实现 “随着窗口缩小而变化，同时也不会产生横向滚动条，只是两侧内容逐渐消失” */
+}
+
+.introduction {
+  margin-top: 4rem;
+}
+
+/* who I am*/
+.who_i_am {
+  font-size: 1.5rem;
+  line-height: 160%;
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* skill圆圈 - 文字垂直居中：行高=div高*/
+.skill_circle_100 {
+  border: 10px solid #E4F3FA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  margin: 20px;
+  font-size: 2rem;
+  color:#9e9a9a;
+}
+
+.skill_circle_100:hover {
+  border: 10px solid #d0eaf6;
+  color: #666;
+}
+
+/* skill半圆*/
+.skill_circle_75 {
+  border-top: 10px solid #E4F3FA;
+  border-bottom: 10px solid #E4F3FA;
+  border-right: 10px solid #E4F3FA;
+  border-left: 10px dotted #E4F3FA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 80px;
+  margin: 20px;
+  font-size: 2rem;
+  color:#9e9a9a;
+}
+
+.skill_circle_75:hover {
+    border-top: 10px solid #d0eaf6;
+    border-bottom: 10px solid #d0eaf6;
+    border-right: 10px solid #d0eaf6;
+    color: #666;
+}
+
+/* featured work标题 */
+.featured_work_margin {
+  margin: 40px auto 10px;
+}
+.featured_work_title {
+  color:#9e9a9a;
+  font-size: 3rem;
+}
+
+
+/* 作品卡片*/
+.work_card {
+  display: block;
+  border:2px solid #E2F2F7;
+  border-radius:16px;
+  box-shadow: 4px 4px 3px #c4c4c4;
+  min-width: 200px;
+  max-width: 500px;
+  width: 100%;
+  margin: 12px auto;
+}
+
+/* 作品图片*/
+.work_pic {
+  border-radius:16px 16px 0 0;
+  cursor: pointer;
+}
+
+.work_pic:hover {
+  filter: brightness(90%);
+}
+
+/* 作品描述*/
+.work_description {
+  margin: 10px;
+}
+
+.contact {
+  padding: 0 20px 20px;
+}
+
+.email{
+  margin: 0 10px;
+}
+
+.email:hover {
+  filter: brightness(110%);
+}
+
+/* Media */
+@media screen and (max-width: 575px) {
+  h1 {font-size: 3rem; font-weight: bolder;}
+  .title-logo {max-width: 90px;}
+  .big_pic_div {height: 330px;}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .big_pic_div {height: 330px;}
+}

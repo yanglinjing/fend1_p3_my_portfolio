@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Puppy Portfolio</title>
+
+  <!--css文件：按使用范围从广到窄排列：bootstrap, google fonts, 自己的css-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--为3小图添加：响应-->
+  <!--如今的script已经不再需要type="text/javascript"属性-->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!--logo和作者-->
+  <header class="container">
+    <div class="row">
+      <div class="col-xs-4 col-sm-4 col-md-4">
+        <img class="title-logo" src="images/logo.gif" alt="logo.jpg">
+      </div>
+      <div class="col-xs-8 col-sm-8 col-md-8 text-right text-uppercase">
+        <h1>Linjing Yang</h1>
+        <h4>Front-end Developer</h4>
+        <h4>UI & UX Designer</h4>
+      </div>
+    </div>
+  </header>
+
+    <!--线-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="line">
+        </div>
+      </div>
+    </div>
+
+    <!--大图-不随着窗口缩小-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 big_pic_div">
+        </div>
+      </div>
+    </div>
+
+    <!--who i am & skills-->
+    <section class="container introduction">
+      <div class="row">
+
+        <!--who i am-->
+        <div class="col-xs-12 col-sm-12 col-md-6 center-block">
+          <div class="who_i_am">
+            <h3 class="text-center">Who I Am</h3>
+            <p>I'm Linjing Yang, a Web Developer from Melbourne, Australia.</p>
+            <p>I am enthusiastic and passionate about Frong and End Development, User Experience and User Interface Design. With a psycholgoy background, I am always focusing on user-centered design methodologies.</p>
+            <p>Want to know more about me? You can find my full resume on <a href="#">Linkedin</a>.</p>
+          </div>
+        </div>
+
+        <!--skills-->
+        <div class="col-xs-12 col-sm-12 col-md-6 text-center skills">
+            <div class="row center-block">
+              <div class="col-xs-6 col-sm-6 col-md-4 skill_circle_100">
+                    <p>AI</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-4 skill_circle_75">
+                    <p>PS</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-4 skill_circle_100">
+                    <p>H5</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-4 skill_circle_100">
+                    <p>CSS</p>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-4 skill_circle_75">
+                    <p>JS</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+
+    <!--作品卡片部分-->
+    <main class="container">
+
+    <!--小标题-->
+      <div class="row">
+        <div class="col-md-12 text-center featured_work_margin">
+          <h2 class="featured_work_title">Featured Work</h2>
+        </div>
+      </div>
+
+
+    <!--作品卡片：第一行-->
+      <div class="row text-center">
+
+      <!--work1-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work1.jpg" alt="work1.jpg" data-toggle="modal" data-target="#project1">
+          <h3>Cloud</h3>
+          <div class="work_description">
+              <p>Icon Design - Accuracy</p>
+          </div>
+        </div>
+      </div>
+
+      <!--work2-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work2.jpg" alt="work2.jpg" data-toggle="modal" data-target="#project2">
+          <h3>Icon - color</h3>
+          <div class="work_description">
+              <p>Icon Design - Color</p>
+          </div>
+        </div>
+      </div>
+
+      <!--work3-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work3.jpg" alt="work3.jpg" data-toggle="modal" data-target="#project3">
+          <h3>Ragdoll</h3>
+          <div class="work_description">
+              <p>AI - Painting</p>
+          </div>
+        </div>
+      </div>
+
+    <!--作品卡片：第二行-->
+      <!--work4-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work1.jpg" alt="work1.jpg" data-toggle="modal" data-target="#project4">
+          <h3>Cloud</h3>
+          <div class="work_description">
+              <p>Icon Design - Accuracy</p>
+          </div>
+        </div>
+      </div>
+
+      <!--work5-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work2.jpg" alt="work2.jpg" data-toggle="modal" data-target="#project5">
+          <h3>Icon - color</h3>
+          <div class="work_description">
+              <p>Icon Design - Color</p>
+          </div>
+        </div>
+      </div>
+
+      <!--work6-->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="work_card">
+          <!-- Image trigger modal -->
+          <img class="img-responsive work_pic" src="images/work3.jpg" alt="work3.jpg" data-toggle="modal" data-target="#project6">
+          <h3>Ragdoll</h3>
+          <div class="work_description">
+              <p>AI - Painting</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </main>
+
+    <!--线-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <hr class="line">
+        </div>
+      </div>
+    </div>
+
+    <!--脚注-->
+    <footer class="container">
+      <div class="row">
+        <div class="col-md-12 text-right contact">
+          <!--为邮件链接加入mailto属性-->
+          <a href="mailto:yanglinjing@gmail.com?subject=DesignerWeb">
+            <img src="images/email.gif" alt="email.gif" class="email">
+          </a>
+          <a href="#">
+            <img src="images/wechat.gif" alt="wechat.gif" class="email">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Modal: work1 -->
+      <section class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+
+                  <!--header: 标题-->
+                  <div class="modal-header">
+                      <h3 class="modal-title" id="myModalLabel">Cloud</h3>
+                  </div>
+
+                  <!--body: 图-->
+                  <div class="modal-body center-block">
+                      <img class="img-responsive" src="images/work1.jpg" alt="work1.jpg">
+                      Icon Design - Accuracy
+                  </div>
+
+                  <!--footer: close按钮-->
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+
+      <!-- Modal: work2 -->
+          <section class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabe2" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+
+                      <!--header: 标题-->
+                      <div class="modal-header">
+                          <h3 class="modal-title" id="myModalLabe2">Icons</h3>
+                      </div>
+
+                      <!--body: 图-->
+                      <div class="modal-body center-block">
+                          <img class="img-responsive" src="images/work2.jpg" alt="work2.jpg">
+                          Icon Design - Color
+                      </div>
+
+                      <!--footer: close按钮-->
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+
+                  </div>
+              </div>
+          </section>
+
+          <!-- Modal: work3 -->
+              <section class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabe3" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+
+                          <!--header: 标题-->
+                          <div class="modal-header">
+                              <h3 class="modal-title" id="myModalLabe3">Ragdoll</h3>
+                          </div>
+
+                          <!--body: 图-->
+                          <div class="modal-body center-block">
+                              <img class="img-responsive" src="images/work3.jpg" alt="work3.jpg">
+                              AI Painting
+                          </div>
+
+                          <!--footer: close按钮-->
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+
+                      </div>
+                  </div>
+              </section>
+
+              <!-- Modal: work4 -->
+                  <section class="modal fade" id="project4" tabindex="-1" role="dialog" aria-labelledby="myModalLabe4" aria-hidden="true">
+                      <div class="modal-dialog">
+                          <div class="modal-content">
+
+                              <!--header: 标题-->
+                              <div class="modal-header">
+                                  <h3 class="modal-title" id="myModalLabe4">Icon</h3>
+                              </div>
+
+                              <!--body: 图-->
+                              <div class="modal-body center-block">
+                                  <img class="img-responsive" src="images/work1.jpg" alt="work4.jpg">
+                                  Icon Design
+                              </div>
+
+                              <!--footer: close按钮-->
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              </div>
+
+                          </div>
+                      </div>
+                  </section>
+
+                  <!-- Modal: work5 -->
+                      <section class="modal fade" id="project5" tabindex="-1" role="dialog" aria-labelledby="myModalLabe5" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+
+                                  <!--header: 标题-->
+                                  <div class="modal-header">
+                                      <h3 class="modal-title" id="myModalLabe5">Icons</h3>
+                                  </div>
+
+                                  <!--body: 图-->
+                                  <div class="modal-body center-block">
+                                      <img class="img-responsive" src="images/work2.jpg" alt="work5.jpg">
+                                      Icon Design
+                                  </div>
+
+                                  <!--footer: close按钮-->
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                  </div>
+
+                              </div>
+                          </div>
+                      </section>
+
+                      <!-- Modal: work6 -->
+                          <section class="modal fade" id="project6" tabindex="-1" role="dialog" aria-labelledby="myModalLabe6" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+
+                                      <!--header: 标题-->
+                                      <div class="modal-header">
+                                          <h3 class="modal-title" id="myModalLabe6">Icons</h3>
+                                      </div>
+
+                                      <!--body: 图-->
+                                      <div class="modal-body center-block">
+                                          <img class="img-responsive" src="images/work3.jpg" alt="work6.jpg">
+                                          Icon Design
+                                      </div>
+
+                                      <!--footer: close按钮-->
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      </div>
+
+                                  </div>
+                              </div>
+                          </section>
+
+</body>
+
+</html>
